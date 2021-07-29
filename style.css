@@ -2,15 +2,35 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-style);
+    font-family: 'Poppins', sans-serif;
     color: #ffff;
 }
+
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 :root{
     --border-radius: 5px;
     --primary-background: rgb(35, 38, 51);
     --font-style: 'Roboto', sans-serif;
-    --common-border: 1px solid rgb(49, 49, 49);
-    --secondary-border: 1px solid rgba(48, 48, 48, 0.664);
+    --common-border: 1px solid rgb(95, 91, 91);
+    --secondary-border: 1px solid rgb(95, 93, 93);
     --secondary-color: #586175;
     --red-color: #f2116fc7;
     --primary-red: #f3287d;
@@ -58,7 +78,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding:  20px;
-    border-bottom: var(--common-border);
+    /* border-bottom: var(--common-border); */
 }
 nav .clock{
     display: inline-flex;
@@ -113,7 +133,7 @@ nav .clock{
       
   }
   main .box-heading{
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 500;
   }
 
@@ -126,13 +146,14 @@ main .state-table{
     border: var(--secondary-border);
     margin-top: 10px;
     border-radius: 5px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     overflow-x: scroll;
     height: 78vh;
 }
 
 main table tr th{
  padding: 4px;
+ font-size: 0.9rem;
  font-weight: 500;
  color: var(--secondary-color);
  border: 1px solid hsl(240, 20%, 27%);
@@ -141,6 +162,7 @@ main table tr td{
     padding: 4px;
     font-weight: 500;
     border: 1px solid hsl(240, 20%, 27%);
+    font-size: 0.8rem;
 }
 
 main table .tone{
@@ -159,7 +181,7 @@ main #tips{
     width: 100%;
     text-align: left !important;
     height: 250px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     border-radius: 5px;
 }
 .tips-container ul li{
